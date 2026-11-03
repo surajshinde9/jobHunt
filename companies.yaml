@@ -23,16 +23,18 @@
 # noise and makes the prefilter counts impossible to reason about.
 
 companies:
-  - {ats: greenhouse, slug: stripe,      name: Stripe}
-  - {ats: greenhouse, slug: databricks,  name: Databricks}
-  - {ats: greenhouse, slug: cloudflare,  name: Cloudflare}
-  - {ats: greenhouse, slug: figma,       name: Figma}
-  - {ats: greenhouse, slug: dropbox,     name: Dropbox}
-  - {ats: greenhouse, slug: coinbase,    name: Coinbase}
-  - {ats: greenhouse, slug: reddit,      name: Reddit}
-  - {ats: lever,      slug: voleon,      name: Voleon}
-
-  - {ats: ashby,      slug: openai,      name: OpenAI}
-  - {ats: ashby,      slug: ramp,        name: Ramp}
-  - {ats: ashby,      slug: linear,      name: Linear}
-  - {ats: ashby,      slug: vanta,       name: Vanta}
+- {ats: greenhouse, slug: stripe, name: Stripe}
+- {ats: greenhouse, slug: twilio, name: Twilio}
+- {ats: greenhouse, slug: gatherai, name: Gather AI}
+- {ats: greenhouse, slug: enterpret, name: Enterpret}
+- {ats: greenhouse, slug: commerceiq, name: CommerceIQ}
+- {ats: greenhouse, slug: nirmata, name: Nirmata}
+- {ats: lever, slug: merklescience, name: Merkle Science}
+- {ats: lever, slug: acronaviation, name: Acron Aviation}
+- {ats: lever, slug: acceldata, name: Acceldata}
+- {ats: ashby, slug: sarvam, name: Sarvam}
+- {ats: ashby, slug: emergence, name: Emergence}
+- {ats: ashby, slug: ema, name: Ema}
+- {ats: ashby, slug: uipath, name: UiPath}
+- {ats: ashby, slug: certifyos, name: CertifyOS}
+- {ats: ashby, slug: netgear, name: NETGEAR}
