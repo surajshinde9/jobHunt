@@ -120,11 +120,24 @@ def cmd_run(args) -> int:
         jobs = jobs[:args.limit]
         print(f"  --limit {args.limit} applied")
 
+   
     if not jobs:
         subject, doc = digest_mod.build([], scanned, 0, store.stats())
         path = digest_mod.write(doc, cfg.get("digest_file", "out/digest.html"))
         print(f"\nnothing new today. preview: {path}")
+
+        if args.send:
+            try:
+                mailer.send(subject, doc)
+                print("Daily digest email sent successfully.")
+            except Exception as e:
+                print(f"! Email failed ({type(e).__name__}: {e})")
+                return 1
+        else:
+            print(" --send not passed, email skipped")
+
         return 0
+
 
     # ---- 3. screen
     scorer = "keyword" if args.scorer == "keyword" else "llm"
